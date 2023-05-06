@@ -3,6 +3,19 @@
 <%@ page import="java.util.List" %>
 <%
 List<Gifts> giftsList = (List<Gifts>)request.getAttribute("giftsList");
+
+
+    String loggedInStatus = (String)session.getAttribute("status");
+    String essayPage;
+    String essayPageText;
+    if(loggedInStatus == null){
+        essayPage = "";
+        essayPageText = "";
+    }else{
+        essayPage = "essays";
+        essayPageText = "Essays";
+    }
+
 %>
 <link href="styles/styles.css" rel="stylesheet" type="text/css">
 
@@ -14,11 +27,13 @@ List<Gifts> giftsList = (List<Gifts>)request.getAttribute("giftsList");
     <title>Gifts</title>
     <a class="homeImg" href="index.jsp"><img src="Images/yield_giving_logo_trans.png" height="90" width="163"></a>
     <a class="linkGroup" href="gifts">Gifts</a>
+    <a class="linkGroup" href="<%=essayPage%>"><%=essayPageText%></a>
+    <a class="linkGroup" href="login">Login</a>
 </head>
 <body>
 
 
-<h2 class="giftsHeader">Information in this database is updated periodically, following consultation with the
+<h2>Information in this database is updated periodically, following consultation with the
     organizations themselves to afford them an opportunity to share it in the ways that best serve their efforts.</h2>
 
 <table>

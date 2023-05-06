@@ -1,6 +1,11 @@
 * {
     background-color: #f7f2ed;
     font-family: Arial;
+}
+
+head {
+    width: 40%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -10,7 +15,15 @@ body  {
     color: #4a2e10;
 }
 
-mainImg {
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainPara {
+    width: 50%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -22,25 +35,17 @@ h2 {
     text-align: center;
 }
 
-.mainPara {
-    width: 40%;
-    text-align: left;
-}
-
-.giftsHeader {
-    font-size: 1em;
-    text-align: center;
-    width: 40%;
-}
-
-.linkGroup{
-    text-align: center;
-}
-
 .homeImg {
     float: left;
 }
 
 table tr td {
     border: 1px solid black;
+}
+
+.loginForm {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

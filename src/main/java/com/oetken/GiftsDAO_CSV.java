@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class GiftsDAO_CSV {
     public static List<Gifts> getAll (HttpServletRequest request, HttpServletResponse response){
         List<Gifts> gifts = new ArrayList<>();
-        try(Scanner scanner = new Scanner(new File(request.getServletContext().getRealPath("WEB-INF/gifts.txt")))) { //"csv_files/gifts_2023-04-18_0006.csv"
+        try(Scanner scanner = new Scanner(new File(request.getServletContext().getRealPath("WEB-INF/gifts.txt")))) {
             int rowCount = 0;
             while (scanner.hasNextLine()) {
                 String[] line = scanner.nextLine().split("\t", -1);
