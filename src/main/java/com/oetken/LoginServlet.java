@@ -21,7 +21,6 @@ public class LoginServlet extends HttpServlet {
       String uniqueLogId = request.getParameter("password");
 
       UserDAO_CSV userDao = new UserDAO_CSV();
-
       List<Users> allUsers;
 
       allUsers = userDao.getAllUsers(request, response);
@@ -32,11 +31,12 @@ public class LoginServlet extends HttpServlet {
                  HttpSession session = request.getSession();
                 session.setAttribute("status", "loggedIn");
                 request.getRequestDispatcher("index.jsp").forward(request, response);
-
+            } else {
+                HttpSession session = request.getSession();
+                session.setAttribute("logInFailed", "please log in");
+                request.getRequestDispatcher("index.jsp").forward(request, response);
             }
         }
-
-       request.getRequestDispatcher("/WEB-INF/gifts.jsp").forward(request, response);
-
+       request.getRequestDispatcher("index.jsp").forward(request, response);
     }
 }

@@ -3,11 +3,6 @@ package com.oetken;
 public class Users {
 
     private String Email;
-
-    private String firstName;
-
-    private String lastName;
-
     private String uniqueLogId;
 
     private String roles;
@@ -21,22 +16,6 @@ public class Users {
 
     public void setEmail(String email) {
         Email = email;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
     }
 
     public String getUniqueLogId() {
@@ -55,10 +34,8 @@ public class Users {
         this.roles = roles;
     }
 
-    public Users(String email, String firstName, String lastName, String uniqueLog, String roles) {
+    public Users(String email, String uniqueLog, String roles) {
         this.Email = email;
-        this.firstName = firstName;
-        this.lastName = lastName;
         this.uniqueLogId = uniqueLog;
         this.roles = roles;
     }

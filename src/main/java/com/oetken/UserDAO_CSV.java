@@ -21,12 +21,9 @@ public class UserDAO_CSV {
                 rowCount++;
                 if(rowCount != 1) {
                     String email = line[0];
-                    String firstName = line[1];
-                    String lastName = line[2];
-                    String uniqueLogId = line[3];
-                    String role = line[4];
-
-                    Users user = new Users(email, firstName, lastName, uniqueLogId, role);
+                    String uniqueLogId = line[1];
+                    String role = line[2];
+                    Users user = new Users(email, uniqueLogId, role);
                     users.add(user);
                 }
             }
@@ -34,9 +31,7 @@ public class UserDAO_CSV {
             System.out.println("File not found");
         }
         return users;
-
     }
-
 
 // https://stackoverflow.com/questions/8256389/appending-to-the-last-line-of-csv-file-in-java
 
