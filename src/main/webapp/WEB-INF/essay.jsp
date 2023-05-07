@@ -28,9 +28,10 @@
 </head>
 <body>
 
+<div class="essayBlock">
 <h2>Giving Pledge</h2>
 <h4> MacKenzie Scott  •  May 25, 2019 </h4>
-<p>
+<h2>
     Thinking about the Giving Pledge, my mind kept searching its folds for a passage I once read about writing, something about not saving our best ideas for later chapters, about using them now.
 
     I found it this morning on a shelf of my books from college, toward the end of Annie Dillard’s The Writing Life. It was underlined and starred like all of the words that have inspired me most over the years, words that felt true in context, and also true in life:
@@ -40,7 +41,8 @@
     I have no doubt that tremendous value comes when people act quickly on the impulse to give. No drive has more positive ripple effects than the desire to be of service. There are lots of resources each of us can pull from our safes to share with others — time, attention, knowledge, patience, creativity, talent, effort, humor, compassion. And sure enough, something greater rises up every time we give: the easy breathing of a friend we sit with when we had other plans, the relief on our child’s face when we share the story of our own mistake, laughter at the well-timed joke we tell to someone who is crying, the excitement of the kids in the school we send books to, the safety of the families who sleep in the shelters we fund. These immediate results are only the beginning. Their value keeps multiplying and spreading in ways we may never know.
 
     We each come by the gifts we have to offer by an infinite series of influences and lucky breaks we can never fully understand. In addition to whatever assets life has nurtured in me, I have a disproportionate amount of money to share. My approach to philanthropy will continue to be thoughtful. It will take time and effort and care. But I won’t wait. And I will keep at it until the safe is empty.
-</p>
+</h2>
+</div>
 
 </body>
 </html>

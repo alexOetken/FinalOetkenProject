@@ -49,3 +49,10 @@ table tr td {
     margin-left: auto;
     margin-right: auto;
 }
+
+.essayBlock {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
